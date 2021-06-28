@@ -8,7 +8,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     platforms='any',
-    version='0.1.2',
+    version='0.1.3',
     description='A package for predicting buy and sell signals',
     license='MIT',
     author='Nicolus Rotich',
@@ -25,7 +25,7 @@ setup(
     	"scipy==1.4.1"
     ],
     url='https://nkrtech.com',
-    download_url='https://github.com/moinonin/evxpredictor/tarball/0.0.9',
+    download_url='https://github.com/moinonin/evxpredictor/archive/refs/heads/main.zip',
     classifiers=[
         'License :: OSI Approved :: MIT License',
     ],
