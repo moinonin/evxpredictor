@@ -6,12 +6,8 @@ You can read more about Evx in the whitepaper [here](https://www.researchgate.ne
 # Usage
 
 In your python script simply import the module and use as follows  
-from evxpredictor.mlbot import Evx
+from evxpredictor import mlbot
 
-print(Evx.buySignalGenerator(20,65,120, 0.98))
+print(mlbot.signal(20,65,120, 0.98,'buy'))
 
-Evx is the class and buysignalGenerator and sellSignalGenerator are methods in it.  
-The above methods take an assets opening, closing, and volume of the asset based on the time interval you have chosen,  
-while the last variable is alpha, a probabilistic value.
-
-
+The above methods take an assets opening, closing, and volume of the asset based on the time interval you have chosen, while the last variable is alpha, a probabilistic value. A zero classification output would instruct the user to buy, while one output means don't buy or sell if the asset is already present in the portfolio.

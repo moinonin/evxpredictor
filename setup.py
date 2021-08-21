@@ -8,7 +8,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     platforms='any',
-    version='0.1.3',
+    version='0.1.6',
     description='A package for predicting buy and sell signals',
     license='MIT',
     author='Nicolus Rotich',
@@ -22,7 +22,8 @@ setup(
     	"scikit-learn==0.22.2.post1",
     	"scipy==1.4.1",
     	"h5py==2.10.0",
-    	"scipy==1.4.1"
+    	"scipy==1.4.1",
+        "fire"
     ],
     url='https://nkrtech.com',
     download_url='https://github.com/moinonin/evxpredictor/archive/refs/heads/main.zip',

@@ -11,6 +11,7 @@ from silence_tensorflow import silence_tensorflow
 silence_tensorflow()
 import json
 from pkg_resources import resource_filename
+import fire
 
 
 class Evx:
@@ -56,3 +57,20 @@ class Evx:
 
 
 
+def signal(opening,closing,volume,alpha,sig):
+  if sig == 'buy':
+    try:
+      return Evx.buySignalGenerator(opening,closing,volume,alpha)
+    except Exception as e:
+      print(e)
+  elif sig == 'sell':
+    try:
+      return Evx.sellSignalGenerator(opening,closing,volume,alpha)
+    except Exception as e:
+      print(e)
+  else:
+    return f'{sig} is not a valid entry!'
+
+
+if __name__ == '__main__':
+  fire.Fire(signal)
